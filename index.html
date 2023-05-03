@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+
+<body>
+    <header class="header-container" id="home">
+        <div class="header">
+            <div class="checkbox-container">
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="toggle">
+                    <label class="checkbox" for="toggle">
+                        <div class="trace"></div>
+                        <div class="trace"></div>
+                        <div class="trace"></div>
+                    </label>
+                    <div class="menu"></div>
+                    <nav class="menu-itens">
+                        <ul>
+                            <li>
+                                <a href="#home">Home</a>
+                            </li>
+                            <li>
+                                <a href="#sobre">Sobre</a>
+                            </li>
+                            <li>
+                                <a href="#projetos">Projetos</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <h1>Hyan Franck</h1>
+        <h2>Front-End Developer</h2>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/hyanfranck/">Linkedin</a>
+            <a href="https://github.com/HyanFranck">Github</a>
+        </div>
+    </header>
+    <div class="container-informação" id="sobre">
+        <div class="container-resumo">
+            <div class="container-resumo-forma">
+                <h1>
+                    Sobre Mim
+                </h1>
+                <p class="container-resumo-text">
+                    Sou um entusiasta de tecnologia com grande interesse em se tornar um desenvolvedor web front-end. Tenho habilidades em HTML5, CSS e JavaScript, e estou buscando aprender e aprimorar minhas habilidades para criar sistemas e sites web eficientes e atraentes.
+                </p>
+            </div>
+        </div>
+        <div class="Detalhes">
+            <div class="container-Detalhes-forma">
+                <h1>
+                    Detalhes
+                </h1>
+                <h2>
+                    Nome:
+                </h2>
+                <p class="container-Detalhes-text">
+                    Hyan Meireles Franck
+                </p>
+                <h2>
+                    Idade:
+                </h2>
+                <p class="container-Detalhes-text">
+                    20 Anos
+                </p>
+                <h2>
+                    Localização:
+                </h2>
+                <p class="container-Detalhes-text">
+                    Belo Horizonte, Minas Gerais, Brasil
+                </p>
+            </div>
+        </div>
+    </div>
+    <main class="container" id="projetos">
+        <div class="card-container">
+            <div class="card">
+                <div class="card-wrapper">
+                    <h2> Projeto 1</h2>
+                    <p>Vem ver</p>
+                </div>
+            </div>
+            <div class="card-text">
+                <a href="Projetos1/Index.html">
+                    Puro Sabor: Site feito para um trabalho da faculdade, HTML5, CSS, Java Script, uma interface de login responsiva que leva para outro site.
+                </a>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-wrapper">
+                    <h2>Projeto 2</h2>
+                    <p>Vem ver</p>
+                </div>
+            </div>
+            <div class="card-text">
+                <a>
+                    Em produção...
+                </a>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-wrapper">
+                    <h2>Projeto 3</h2>
+                    <p>Vem ver</p>
+                </div>
+            </div>
+            <div class="card-text">
+                <a>
+                    Em produção...                
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        Produzido por Hyan Franck
+    </footer>
+    <script>
+        // Seleciona o checkbox
+        const checkbox = document.getElementById("toggle");
+    
+        // Seleciona todos os links dentro da nav
+        const links = document.querySelectorAll(".menu-itens a");
+    
+        // Para cada link, adiciona um evento de clique para desmarcar o checkbox
+        links.forEach(link => {
+            link.addEventListener("click", () => {
+                checkbox.checked = false;
+            });
+        });
+    </script>
+</body>
+
+</html>

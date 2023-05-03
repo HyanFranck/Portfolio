@@ -1,0 +1,400 @@
+button {
+    border: 0cm;
+    border-color: #00000000;
+}
+
+.topnav {
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+/* Menu Hamburguer */
+
+.checkbox-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999;
+    transition: 400ms ease-in-out 0s;
+}
+
+.checkbox .trace {
+    width: 50px;
+    height: 2px;
+    background-color: #1e1e2a;
+    position: absolute;
+    border-radius: 4px;
+    transition: 0.5s ease-in-out;
+}
+
+.checkbox .trace:nth-child(1) {
+    top: 26px;
+    transform: rotate(0);
+}
+
+.checkbox .trace:nth-child(2) {
+    top: 46px;
+    transform: rotate(0);
+}
+
+.checkbox .trace:nth-child(3) {
+    top: 66px;
+    transform: rotate(0);
+}
+
+#toggle {
+    display: none;
+}
+
+
+/* Menu */
+
+.menu {
+    position: absolute;
+    top: 28px;
+    right: 30px;
+    background-color: #000;
+    height: 50vmax;
+    width: 50vmax;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 0px #000000;
+    z-index: -1;
+    transition: 400ms ease-in-out 0s;
+}
+
+.menu-itens {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: 400ms ease-in-out 0;
+}
+
+.menu-itens a:hover {
+    color: white;
+}
+
+.menu-itens ul {
+    list-style-type: none;
+}
+
+.menu-itens ul li a {
+    margin: 10px 0;
+    color: #1e1e2a;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 40px;
+}
+
+
+/*Animação do Menu*/
+
+#toggle:checked+.checkbox .trace:nth-child(1) {
+    transform: rotate(45deg);
+    top: 47px;
+}
+
+#toggle:checked+.checkbox .trace:nth-child(2) {
+    transform: translate(-100px);
+    width: 30px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#toggle:checked+.checkbox .trace:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 48px;
+}
+
+#toggle:checked+.checkbox {
+    background-color: #000000;
+}
+
+#toggle:checked~.menu {
+    box-shadow: 0px 0px 0px 44vmax #000000;
+    z-index: 1;
+}
+
+#toggle:checked~.menu-itens {
+    visibility: visible;
+    opacity: 1;
+}
+
+.li {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 28%;
+    height: 10%;
+}
+
+.t1 {
+    text-align: center;
+}
+
+.t2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.t3 {
+    text-align: justify;
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Medium;
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+.Negrin {
+    font-family: 'Roboto-Bold', serif;
+}
+
+.St {
+    font-family: 'Roboto-Medium', serif;
+    color: #ff6026;
+    font-size: 24pt;
+}
+
+.opaco {
+    color: #00000061;
+}
+
+.grid {
+    display: grid;
+    margin: 0 auto;
+}
+
+.item1 {
+    background: #f0f0f0;
+    text-align: left;
+}
+
+.item2 {
+    background: #f0f0f0;
+    text-align: left;
+    color: #00000061;
+    font-family: 'Roboto-Regular', serif;
+}
+
+.item3 {
+    background: #f0f0f0;
+    text-align: right;
+    color: #00000061;
+    font-family: 'Roboto-Regular', serif;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.item4 {
+    background: #f0f0f0;
+    text-align: center;
+    color: #00000061;
+    font-family: 'Roboto-Regular', serif;
+    padding: 5px;
+}
+
+.item5 {
+    text-align: right;
+    color: #00000061;
+    font-family: 'Roboto-Regular', serif;
+}
+
+.item5A {
+    text-align: center;
+    color: #00000061;
+}
+
+.item6 {
+    text-align: left;
+    font-size: 1.5em;
+    font-family: 'Roboto-Regular', serif;
+}
+
+.item6a {
+    text-align: left;
+    font-size: 1.5em;
+}
+
+.item7 {
+    background: #f0f0f0;
+    text-align: left;
+}
+
+.item8 {
+    background: #ff6026;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    border-bottom-color: #ff6026;
+    border: 0;
+    text-decoration: none;
+}
+
+.item9 {
+    background: #62b22f;
+    text-align: center;
+    height: 100%;
+    border-bottom-color: #62b22f;
+    width: 100%;
+    border: 0;
+    text-decoration: none;
+}
+
+.grid {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+body {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cont {
+    margin-left: 10%;
+}
+
+.grid-template-columns {
+    grid-template-columns: 20% 25% 25% 20%;
+}
+
+.grid-template-columns-1 {
+    grid-template-columns: 25% 35% 15% 15%;
+}
+
+.grid-template-columns-12 {
+    grid-template-columns: 10.5% 25% 5% 10%;
+}
+
+.grid-auto-columns-1 {
+    grid-template-columns: 20% 20% 20% 10% 15%;
+}
+
+.grid-auto-columns-2 {
+    grid-template-columns: 20% 40% 10% 5% 5%;
+}
+
+.Tl {
+    font-family: 'Roboto-Medium', serif;
+    font-size: 20pt;
+}
+
+.SubH {
+    font-family: 'Roboto-Regular', serif;
+    font-size: 16pt;
+}
+
+.body2 {
+    font-family: 'Roboto-Medium', serif;
+    font-size: 14pt;
+}
+
+.body1 {
+    font-family: 'Roboto-Regular', serif;
+    font-size: 14pt;
+}
+
+.cap {
+    font-family: 'Roboto-Regular', serif;
+    font-size: 12pt;
+    text-align: center;
+    justify-content: left;
+}
+
+.capa {
+    font-family: 'Roboto-Regular', serif;
+    font-size: 12pt;
+    color: #00000061;
+}
+
+.lixeira {
+    flex-direction: initial;
+}
+
+#aaa {
+    background-image: url(../imagens/png/trash.png);
+    background-repeat: no-repeat;
+}
+
+#aaa:hover {
+    background-image: url(../imagens/png/trash_hover.png);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 30px;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+li a,
+.dropbtn {
+    display: inline-block;
+    color: #00000061;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #00000061;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

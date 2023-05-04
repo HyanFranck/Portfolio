@@ -482,6 +482,11 @@ a:hover {
         visibility: visible;
         font-size: 10px;
     }
+    .card:hover>.card-wrapper::before {
+        height: 150px;
+        width: 150px;
+        opacity: 1;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -496,7 +501,7 @@ a:hover {
     }
     .card {
         width: 250px;
-        height: 200px;
+        height: 250px;
     }
     .card-text {
         width: 50%;
@@ -514,20 +519,53 @@ a:hover {
         visibility: visible;
         font-size: 10px;
     }
+}
 
-    @media only screen and (max-width: 450px) {
-        h1 {
-            font-size: 30px;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-        }
-        
-        h2 {
-            font-size: 20px;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-        }
+@media only screen and (max-width: 450px) {
+    .social-media a {
+        padding: 1rem 2rem;
+        min-width: 2rem;
     }
-
+    .social-media {
+        font-size: 40px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    h1 {
+        font-size: 30px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+    
+    h2 {
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+    .card {
+        width: 150px;
+        height: 150px;
+    }
+    .card-text {
+        width: 50%;
+        font-size: 13PX;
+        letter-spacing: 1px;
+        color: rgb(109, 109, 109);
+        padding: 10px;
+    }
+    .card-wrapper h2 {
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+    .card:hover>.card-wrapper p {
+        opacity: 1;
+        visibility: visible;
+        font-size: 10px;
+    }
+    .card:hover>.card-wrapper::before {
+        height: 100px;
+        width: 100px;
+        opacity: 1;
+    }
 
 }

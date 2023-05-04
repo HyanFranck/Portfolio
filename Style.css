@@ -11,7 +11,7 @@ body {
 /* Header */
 
 .header-container {
-    height: 100vh;
+    height:85vh;
     width: 100%;
     background-color: rgb(251, 116, 2);
     background-image: url(IMG/teste.png);
@@ -357,7 +357,7 @@ a:hover {
     text-transform: uppercase;
     letter-spacing: 4px;
     margin: 0;
-    transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;;
 }
 
 .card-wrapper p {
@@ -383,8 +383,14 @@ a:hover {
     opacity: 1;
     visibility: visible;
     font-size: 14px;
+    z-index: 0;
 }
 
+.card:hover>.card-wrapper p a {
+    color: #1e1e2a;
+    text-decoration: none;
+    background-color: transparent;
+}
 
 /** Footer **/
 
@@ -469,6 +475,7 @@ a:hover {
     .card-wrapper h2 {
         font-size: 30px;
         letter-spacing: 3px;
+        z-index: 1;
     }
     .card:hover>.card-wrapper p {
         opacity: 1;
@@ -507,4 +514,20 @@ a:hover {
         visibility: visible;
         font-size: 10px;
     }
+
+    @media only screen and (max-width: 450px) {
+        h1 {
+            font-size: 30px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+        
+        h2 {
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+    }
+
+
 }

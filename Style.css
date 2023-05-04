@@ -7,6 +7,7 @@ body {
     background: #000000;
 }
 
+
 /* Header */
 
 .header-container {
@@ -22,7 +23,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     box-sizing: border-box;
-    padding:  0 10%;
+    padding: 0 10%;
     position: relative;
 }
 
@@ -35,7 +36,6 @@ h1 {
 h2 {
     text-transform: uppercase;
     letter-spacing: 4px;
-    
 }
 
 .social-media {
@@ -228,7 +228,6 @@ a:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
 }
 
 .container-resumo-text {
@@ -266,7 +265,6 @@ a:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
 }
 
 .container-Detalhes-text {
@@ -280,7 +278,6 @@ a:hover {
 
 
 /* Card */
-
 
 .container {
     height: auto;
@@ -401,7 +398,8 @@ a:hover {
     color: #1e1e2a;
 }
 
-/** mobile **/ 
+
+/** mobile **/
 
 @media only screen and (max-width: 900px) {
     .header-container {
@@ -412,14 +410,11 @@ a:hover {
     }
     .social-media {
         font-size: 40px;
-    
     }
-    
     .social-media a {
         padding: 1rem 3rem;
         min-width: 4rem;
     }
-
     .container-resumo-forma {
         padding: 10%;
         display: flex;
@@ -427,23 +422,18 @@ a:hover {
         flex-direction: column;
         width: 90%;
     }
-    
     .container-resumo-titulo {
         margin: 3rem 0 0 0;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-    
     }
-
     .container-resumo-text {
-        width:90%;
+        width: 90%;
         font-size: 15px;
     }
-
     .container-Detalhes-titulo h2 {
-
         margin: 1%;
     }
 }
@@ -453,26 +443,22 @@ a:hover {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
     }
-    .container-resumo-forma{
-        padding-bottom: 0 ;
+    .container-resumo-forma {
+        padding-bottom: 0;
         padding-right: 0;
     }
 }
 
 @media only screen and (max-width: 600px) {
-
     .social-media a {
         padding: 1rem 1rem;
         min-width: 2rem;
     }
-
     .card {
         width: 200px;
         height: 200px;
     }
-
     .card-text {
         width: 50%;
         font-size: 100%;
@@ -480,39 +466,31 @@ a:hover {
         color: rgb(109, 109, 109);
         padding: 10px;
     }
-
     .card-wrapper h2 {
         font-size: 30px;
         letter-spacing: 3px;
     }
-    
     .card:hover>.card-wrapper p {
         opacity: 1;
         visibility: visible;
         font-size: 10px;
     }
-
-
 }
 
 @media only screen and (max-width: 500px) {
-
     .social-media a {
         padding: 1rem 3rem;
-        min-width: 2rem;        
+        min-width: 2rem;
     }
-
     .social-media {
         font-size: 40px;
         flex-direction: column;
-        justify-content: center;        
+        justify-content: center;
     }
-
     .card {
         width: 250px;
         height: 200px;
     }
-
     .card-text {
         width: 50%;
         font-size: 13PX;
@@ -520,17 +498,13 @@ a:hover {
         color: rgb(109, 109, 109);
         padding: 10px;
     }
-
     .card-wrapper h2 {
         font-size: 30px;
         letter-spacing: 3px;
     }
-    
     .card:hover>.card-wrapper p {
         opacity: 1;
         visibility: visible;
         font-size: 10px;
     }
-
-}   
-
+}

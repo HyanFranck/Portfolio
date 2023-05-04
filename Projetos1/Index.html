@@ -26,19 +26,19 @@
             <nav class="menu-itens">
                 <ul>
                     <li>
-                        <a href="#">Home</a>
+                        <a href="#home">Home</a>
                     </li>
                     <li>
-                        <a href="#">Sobre</a>
+                        <a href="#sobre">Sobre</a>
                     </li>
                     <li>
-                        <a href="#">Projetos</a>
+                        <a href="#projetos">Projetos</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </div>
-</div>
+    </div>
     <Div Class="main-login">
         <div class="left-login">
             <h1>Venha ver nossas Delícias!<br>Bem Vindo Ao nosso Cardapio!</h1><br>
@@ -62,8 +62,11 @@
         </div>
     </Div>
 </body>
-<script> document.getElementById("enviar").addEventListener("click", function() {
-    var mensagem = document.getElementById("mensagem").value;
-    window.location.href = "cardapio.html?mensagem=" + mensagem;
-  });</script>
+<script>
+    document.getElementById("enviar").addEventListener("click", function() {
+        var mensagem = document.getElementById("mensagem").value;
+        window.location.href = "cardapio.html?mensagem=" + mensagem;
+    });
+</script>
+
 </html>
